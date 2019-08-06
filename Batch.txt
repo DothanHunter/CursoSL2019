@@ -1,0 +1,30 @@
+//////////////////////////////////////
+BATCH
+//////////////////////////////////////
+
+--batch_myBatch001
+Content-Type:application/http
+Content-Transfer-Encoding:binary
+
+--changeset_myChangeset001
+
+POST /b1s/v1/UserTablesMD
+
+{"TableDescription":"ITBA System Settings","TableName":"SL_Settings","TableType":"bott_MasterData"}
+--changeset_myChangeset001
+Content-Type:application/http
+Content-Transfer-Encoding:binary
+
+POST /b1s/v1/UserFieldsMD
+
+{"Description":"SAP Item Group Code","Name":"SL_SetFilter","SubType":"st_None","TableName":"@SL_Settings","Type":"db_Alpha","EditSize":10}
+--changeset_myChangeset001
+Content-Type:application/http
+Content-Transfer-Encoding:binary
+
+POST /b1s/v1/UserFieldsMD
+
+{"Description":"SAP Payment Term","Name":"SL_SetFilter","SubType":"st_None","TableName":"@SL_Settings","Type":"db_Numeric","EditSize":4}
+
+--changeset_myChangeset001--
+--batch_myBatch001--

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AddOnRegData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SlientInstallation="No" SlientUpgrade="No" Partnernmsp="SEIDORAR" SchemaVersion="3.0" Type="ServiceLayerScript" MultipleVersion="false" OnDemand="" OnPremise="" ExtName="OrdersExt" ExtVersion="1.0.1" Contdata="msacchetta@seidor.com" Partner="Seidor" DBType="HANA" ClientType="S">
+  <Validity>
+    <SBOCompatibility>
+      <Version From="920100" To="930200" />
+    </SBOCompatibility>
+  </Validity>
+	<ServiceLayerScripts>
+		<Script Name="Orders" FileName="Orders.js"/>
+	</ServiceLayerScripts>
+  <XApps> 
+		<XApp Name="" Path="" FileName="" />
+	</XApps>
+</AddOnRegData>

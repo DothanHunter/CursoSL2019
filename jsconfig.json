@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "target": "ES6",
+        "checkJs": true
+    },
+    "typeAcquisition": {
+        "include": [
+            "Base", "ComplexType", "EntityType", "EnumType"
+        ]
+    }
+}
